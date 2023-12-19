@@ -1,7 +1,7 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 # SX1255
-Evaluation board for the SX1255 RF transceiver chip.
+Minimalistic evaluation board for the SX1255 RF transceiver chip.
 
 ## License
 This work is licensed under a
