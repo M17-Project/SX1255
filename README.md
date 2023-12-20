@@ -1,7 +1,9 @@
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 # SX1255
-Minimalistic evaluation board for the SX1255 RF transceiver chip.
+Minimalistic evaluation board for the SX1255 RF transceiver chip, with PMOD connectors.
+
+<img src="https://github.com/M17-Project/SX1255/blob/main/front.png" width="450">
 
 ## License
 This work is licensed under a
