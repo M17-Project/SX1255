@@ -5,6 +5,25 @@ Minimalistic evaluation board for the SX1255 RF transceiver chip, with PMOD conn
 
 <img src="https://github.com/M17-Project/SX1255/blob/main/front.png" width="450">
 
+## Raspberry Pi GPIO header connections
+| PMOD pin name       | RPi header pin number |
+|---------------------|-----------------------|
+| **VCC**             | **1** (*3.3V*)        |
+| **OUT**             | **12** (*GPIO18*)     |
+| **MOSI**            | **19** (*SPI_MOSI*)   |
+| **MISO**            | **21** (*SPI_MISO*)   |
+| **RST**             | **22** (*GPIO25*)     |
+| **SCK**             | **23** (*SPI_CLK*)    |
+| **/CS**             | **24** (*SPI_CE0_N*)  |
+| **IO2**             | **35** (*GPIO19*)     |
+| **I_OUT**           | **38** (*GPIO20*)     |
+| **GND**             | **39** (*GND*)        |
+| **I_IN**            | **40** (*GPIO21*)     |
+
+Sample Raspberry Pi code for SX1255 control can be found [here](https://gist.github.com/sp5wwp/25fa989ebd98b3b707eadae9b63af679).
+Remember to provide an external 32MHz signal at the PMOD *REF* pin or *EXT_REF* SMA connector.
+[I2S slave overlay](https://github.com/AkiyukiOkayasu/RaspberryPi_I2S_Slave) is required.
+
 ## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
