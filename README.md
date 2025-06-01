@@ -5,6 +5,10 @@ Minimalistic evaluation board for the SX1255 RF transceiver chip, with PMOD conn
 
 <img src="https://github.com/M17-Project/SX1255/blob/main/front.png" width="450">
 
+## Clocking
+Remember to provide a clock signal at the PMOD *REF* pin or *EXT_REF* SMA connector. The source is selectable with a jumper.
+A range of clock frequencies can be used, see the SX1255's documentation for details.
+
 ## Raspberry Pi GPIO header connections
 | PMOD pin name       | RPi header pin number |
 |---------------------|-----------------------|
@@ -21,7 +25,6 @@ Minimalistic evaluation board for the SX1255 RF transceiver chip, with PMOD conn
 | **I_IN**            | **40** (*GPIO21*)     |
 
 Sample Raspberry Pi code for SX1255 control can be found [here](https://gist.github.com/sp5wwp/25fa989ebd98b3b707eadae9b63af679).
-Remember to provide an external 32MHz signal at the PMOD *REF* pin or *EXT_REF* SMA connector.
 [I2S slave overlay](https://github.com/AkiyukiOkayasu/RaspberryPi_I2S_Slave) is required.
 
 ## License
